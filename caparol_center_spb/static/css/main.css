@@ -77,6 +77,7 @@ body {
 }
 
 .section-first {
+  height: 800px;
   position: relative;
   background: url(../img/BG_first-section.jpg) center no-repeat;
   background-size: cover;
@@ -95,7 +96,7 @@ body {
 }
 
 .container-first {
-  height: 960px;
+  height: 100%;
   width: 950px;
   margin: auto;
   display: -webkit-box;

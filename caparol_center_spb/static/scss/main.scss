@@ -17,6 +17,8 @@ $maincolor-text: #000;
     border-radius: 10px;
     a {
         text-decoration: none;
+        list-style-type: none;
+        color: #fff;
     }
 }
 
@@ -42,6 +44,7 @@ body {
 
 .header {
     padding-top: 30px;
+    padding-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

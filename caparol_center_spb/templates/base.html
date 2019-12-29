@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> {% load static%}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %} {% endblock title %}</title>
+</head>
+
+<body>
+    <header class="header-section">
+        <div class="container header">
+            <img src="{% static 'img/Logo.jpg' %}" alt="Логотип" class="logo">
+            <nav class="header-nav">
+                <ul class="main-list">
+                    <li class="main-list__items"><a href="#">Главная</a></li>
+                    <li class="main-list__items"><a href="#">Готовые решения</a></li>
+                    <li class="main-list__items"><a href="#">Шоу-Рум</a></li>
+                    <li class="main-list__items"><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    {% block content %}{% endblock content %}
+</body>
+
+</html>

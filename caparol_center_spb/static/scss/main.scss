@@ -301,7 +301,23 @@ body {
     .container-first {
         width: 100%;
         .section-first__content {
+            height: 400px;
             width: 100%;
         }
+    }
+    .header-nav {
+        flex-basis: auto;
+    }
+    .section-second {
+        height: 1060px;
+    }
+    .section-second .section-second__content {
+        height: 1030px;
+    }
+    .section-second .section-second__info {
+        height: 330px;
+    }
+    .section-second .section-second__gallery img {
+        min-width: 320px;
     }
 }

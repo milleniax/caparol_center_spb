@@ -46,7 +46,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="$(if [ "$OSTYPE" "==" "cygwin" ]; then cygpath -u 'C:\Users\Marsel\Desktop\bussiness\projects\sites\caparol_center_spb_project\env'; else echo '/C/Users/Marsel/Desktop/bussiness/projects/sites/caparol_center_spb_project/env'; fi;)"
+VIRTUAL_ENV="$(if [ "$OSTYPE" "==" "cygwin" ]; then cygpath -u 'C:\Users\Marsel\Desktop\python\env'; else echo '/C/Users/Marsel/Desktop/python/env'; fi;)"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

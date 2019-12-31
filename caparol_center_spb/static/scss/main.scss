@@ -309,16 +309,6 @@ body {
         .section-second__info {
             min-width: 800px;
         }
-        .section-second__gallery {
-            flex-wrap: wrap;
-            img {
-                flex-basis: 48%;
-                margin-bottom: 4%;
-            }
-            img:last-child {
-                flex-basis: 100%;
-            }
-        }
     }
     .section-fourth {
         .container-fourth {
@@ -371,6 +361,9 @@ body {
     }
     .section-second .section-second__info {
         padding-top: 0px;
+    }
+    .section-second .section-second__gallery {
+        flex-wrap: wrap;
     }
     .section-second .section-second__gallery img {
         flex-basis: 51%;

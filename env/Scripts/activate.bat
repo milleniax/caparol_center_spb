@@ -1,6 +1,6 @@
 @echo off
 
-set "VIRTUAL_ENV=C:\Users\Marsel\Desktop\python\env"
+set "VIRTUAL_ENV=C:\Users\Marsel\Desktop\bussiness\projects\sites\caparol_center_spb_project\env"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"

@@ -10,9 +10,10 @@
 </head>
 
 <body>
+    <a name="yakor-top"></a>
     <header class="header-section">
         <div class="header container">
-            <img src="{% static 'img/Logo.jpg' %}" alt="Логотип" class="logo">
+            <a href="#"><img src="{% static 'img/Logo.jpg' %}" alt="Логотип" class="logo"></a>
             <nav class="header-nav">
                 <ul class="main-list">
                     <li class="main-list__items"><a href="#">Главная</a></li>
@@ -24,6 +25,27 @@
         </div>
     </header>
     {% block content %}{% endblock content %}
+    <footer>
+        <div class="footer container">
+            <div class="map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3a1d8625607f6df773281a3df4d10e638b7112752219650d56e826c03ada278a&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2019 Caparol Center SPB</p>
+                <nav class="footer-menu">
+                    <ul class="menu">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Все товары</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Шоу-Рум</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#yakor-top" class="footer-menu__link">Наверх</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

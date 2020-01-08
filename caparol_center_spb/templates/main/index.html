@@ -182,12 +182,24 @@
             <h3>Что выбрать</h3>
             <p>Напишите нам и мы поможет подобрать необходимые материалы.</p>
         </div>
-        <form action="" class="main-form">
-            <input type="email" placeholder="Ваш email" class="field field-input">
-            <input type="name" placeholder="Ваше имя и отчество" class="field field-input">
-            <textarea name="text" id="" cols="30" rows="10" placeholder="Ваш вопрос" class="field field-textarea"></textarea>
+        <form action="{% url 'main:question' %}" method="POST" class="main-form">
+            {% csrf_token %}
+
+            <input type="email" placeholder="Ваш email" class="field field-input" name="email">
+            <input type="name" placeholder="Ваше имя и отчество" class="field field-input" name="initial">
+            <textarea id="" cols="30" rows="10" placeholder="Ваш вопрос" class="field field-textarea" name="question"></textarea>
             <button type='submit' class="field form-btn">Отправить</button>
         </form>
+        
+        {% if messages %}
+            {% for message in messages %}
+            <script>
+                alert('{{ message }}')
+            </script>
+            {% endfor %}
+            
+        {% endif %}
+            
     </div>
 </section>
 

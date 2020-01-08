@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
         position = 0,
         counter = 0;
     slider = document.querySelector('.slider');
-    slider.style.width = 'containerFiftWidth.offsetWidth * 3';
     //containerFiftWidth.style.maxWidth = slides[0].offsetWidth + 'px';
     arrowRight.addEventListener('click', () => {
         padding = parseInt(getComputedStyle(containerFiftWidth, true).paddingLeft)
@@ -39,4 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
             arrowRight.style.left = arrowRightPostition - position + 'px';*/
         }
     });
+
+
 });

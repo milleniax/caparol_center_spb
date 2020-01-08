@@ -775,6 +775,196 @@ body {
   list-style-type: none;
 }
 
+.container-decision {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1980px;
+  padding: 0 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.container-decision h1 {
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+.container-decision h2 {
+  color: #F07575;
+  font-family: Miniver;
+  font-size: 40px;
+  margin-bottom: 70px;
+}
+
+.container-decision h2 span {
+  margin-left: 20px;
+  font-weight: normal;
+  color: #000;
+  font-style: italic;
+}
+
+.container-decision .decision-top,
+.container-decision .decision-middle,
+.container-decision .decision-bottom {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: 70px auto;
+}
+
+.container-decision .decision-images {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-decision .card:first-child p {
+  color: #F2C94C;
+}
+
+.container-decision .card:nth-child(2) p {
+  color: #BA35BD;
+}
+
+.container-decision .card:last-child p {
+  color: #56CCF2;
+}
+
+.container-decision .card {
+  max-height: 560px;
+  padding: 20px 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-decision .card img {
+  width: 80%;
+  height: auto;
+}
+
+.container-decision .card p {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.container-decision .decision-middle .decision-images {
+  margin: 0 auto;
+}
+
+.container-decision .decision-middle .decision-images img {
+  width: 22%;
+  height: auto;
+}
+
+.container-decision h3 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.container-decision .decision-bottom {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-decision .decision-bottom img {
+  width: 100%;
+}
+
+.container-decision .left-side {
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
+}
+
+.container-decision .right-side {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  min-height: 300px;
+  height: auto;
+  max-width: 1000px;
+  -ms-flex-preferred-size: 74%;
+      flex-basis: 74%;
+}
+
+.container-decision .right-side > p {
+  font-size: 30px;
+}
+
+.container-decision .extra-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-decision .extra-info p {
+  font-size: 30px;
+}
+
+.container-decision .extra-info a {
+  padding: 20px 60px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+  background-color: #22DFF9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 20px;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
 @media (max-width: 1320px) {
   .container-first {
     padding: 40px 80px;

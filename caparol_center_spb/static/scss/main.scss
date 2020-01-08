@@ -487,6 +487,128 @@ body {
     }
 }
 
+.container-decision {
+    h1 {
+        margin-bottom: 30px;
+        font-size: 50px;
+    }
+    h2 {
+        color: #F07575;
+        font-family: Miniver;
+        font-size: 40px;
+        margin-bottom: 70px;
+    }
+    h2 span {
+        margin-left: 20px;
+        font-weight: normal;
+        color: #000;
+        font-style: italic;
+    }
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1980px;
+    padding: 0 80px;
+    display: flex;
+    flex-flow: column;
+    .decision-top,
+    .decision-middle,
+    .decision-bottom {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        margin: 70px auto;
+    }
+    .decision-images {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .card:first-child p {
+        color: #F2C94C;
+    }
+    .card:nth-child(2) p {
+        color: #BA35BD;
+    }
+    .card:last-child p {
+        color: #56CCF2;
+    }
+    .card {
+        max-height: 560px;
+        padding: 20px 10px;
+        flex-flow: column;
+        display: flex;
+        justify-content: space-between;
+        flex: 1 1 30%;
+        align-items: center;
+        img {
+            width: 80%;
+            height: auto;
+        }
+        p {
+            font-size: 30px;
+            font-weight: normal;
+        }
+    }
+    .decision-middle {
+        .decision-images {
+            margin: 0 auto;
+            img {
+                width: 22%;
+                height: auto;
+            }
+        }
+    }
+    h3 {
+        text-align: center;
+        font-size: 35px;
+    }
+    .decision-bottom {
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }
+    .left-side {
+        flex-basis: 22%;
+    }
+    .right-side {
+        justify-content: space-between;
+        display: flex;
+        flex-flow: column;
+        min-height: 300px;
+        height: auto;
+        max-width: 1000px;
+        flex-basis: 74%;
+    }
+    .right-side>p {
+        font-size: 30px;
+    }
+    .extra-info {
+        display: flex;
+        justify-content: space-between;
+    }
+    .extra-info p {
+        font-size: 30px;
+    }
+    .extra-info a {
+        padding: 20px 60px;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        text-decoration: none;
+        font-size: 30px;
+        color: #fff;
+        background-color: #22DFF9;
+        box-shadow: none;
+        border-radius: 20px;
+        flex-basis: 20%;
+    }
+}
+
 @media(max-width: 1320px) {
     .container-first {
         padding: 40px 80px;

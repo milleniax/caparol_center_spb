@@ -3,6 +3,12 @@
     <h1>Готовые решения</h1>
     <div class="decision-top">
         <h2>Шаг 1 <span>Выберите защиту фасада</span></h2>
+        {% for protect in protects %}
+            <div class="card card_decision">
+                <img class="card-img" src=" {{ protect.img.url }} " alt=" {{ protect.title }} ">
+                <p>{{ protect.description }}</p>
+            </div>
+        {% endfor %}
         <div class="decision-images">
             <div class="card card_decision" id="card_decision-1">
                 <img class="card-img" id="card-img-1" src="/static/img/Decision-card_1.svg" alt="">
@@ -20,7 +26,13 @@
     </div>
     <div class="decision-middle">
         <h2>Шаг 2 <span>Доступные для него покрытия</span></h2>
+        
+        
+            
         <div class="decision-images">
+            {% for cover in covers %}
+                <img src=" {{ cover.img.url }} " alt="">
+            {% endfor %}
             <img src="/static/img/Desicion_1.svg" alt="">
             <img src="/static/img/Desicion_2.svg" alt="">
             <img src="/static/img/Desicion_3.svg" alt="">
